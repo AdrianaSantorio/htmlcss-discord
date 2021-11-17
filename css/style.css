@@ -127,5 +127,18 @@ header {
     background-image: url(../img/jumbo.png);
     background-size: cover;
     height:500px;
+    text-align: center;
+}
+
+.spotlight .w-60 {
+    margin: auto;
+}
+
+.spotlight-text h1 {
+    font-size: 50px;
+    margin: 10px;
+}
+
+.spotlight-text p {
 
 }
