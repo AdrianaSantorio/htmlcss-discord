@@ -12,7 +12,11 @@ img {
 /* GENERAL */
 
 body {
-    font-family: 'Whitney', 'Helvetica Neue', 'Helvetica', Arial, sans-serif;
+    font-family: Whitney, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+section {
+    text-align: center;
 }
 
 .container {
@@ -32,7 +36,7 @@ body {
     position: relative;
 }
 
-.vh-100 {
+.full-view {
     height: 100vh;
 }
 
@@ -65,7 +69,6 @@ body {
 /* classe col */
 .col {
     float: left;
-    text-align: center;
 }
 
 /* buttons */
@@ -128,10 +131,6 @@ header {
 
 /* main menu */
 
-.main-menu {
-    text-align: center;
-}
-
 .main-menu li {
     display: inline-block;
     margin: 0 15px;
@@ -148,7 +147,6 @@ header {
 .spotlight {
     background-image: url(../img/jumbo.png);
     background-size: cover;
-    text-align: center;
     height:500px;
 }
 
@@ -197,4 +195,17 @@ header {
 }
 
 /* MAIN */
+
+.section-text {
+    padding: 50px 20px;
+}
+
+.full-view h2 {
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+.full-view p {
+    font-size: 20px;
+}
 
