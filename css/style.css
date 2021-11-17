@@ -35,19 +35,19 @@ body {
     float: left;
 }
 
-.col-25 {
+.w-25 {
     width: 25%;
 }
 
-.col-40 {
+.w-40 {
     width: 40%;
 }
 
-.col-50 {
+.w-50 {
     width: 50%;
 }
 
-.col-60 {
+.w-60 {
     width: 60%;
 }
 
@@ -121,3 +121,11 @@ header {
     font-size: 16px;
 }
 
+/* spotlight */
+
+.spotlight {
+    background-image: url(../img/jumbo.png);
+    background-size: cover;
+    height:500px;
+
+}
