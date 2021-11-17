@@ -26,7 +26,7 @@ body {
 }
 
 .container {
-    width: 1200px;
+    width: 1100px;
     margin: auto;
 }
 
@@ -53,9 +53,28 @@ body {
 
 .btn {
     text-decoration: none;
+    display: inline;
 }
 
-.btn-small 
+.btn-small {
+    padding: 10px 16px;
+    border-radius: 30px;
+    font-size: 16px;
+}
+
+.btn-big {
+    /* TO DO- determinare caratteristiche */
+}
+
+.btn-clear {
+    background-color: white;
+    color: #23272A;
+}
+
+.btn-dark {
+    background-color: #23272A;
+    color: white;
+}
 
 /* text */
 
@@ -81,7 +100,7 @@ header {
     vertical-align: middle;
 }
 
-.top-bar .btn {
+.top-bar .button {
     text-align: right;
 }
 
@@ -93,7 +112,7 @@ header {
 
 .main-menu li {
     display: inline-block;
-    margin: 0 10px;
+    margin: 0 15px;
 }
 
 .main-menu li a {
