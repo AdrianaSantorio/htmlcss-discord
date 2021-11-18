@@ -207,8 +207,9 @@ header {
 
 /* MAIN */
 
+/* section text */
 .section-text {
-    padding: 50px 20px;
+    padding: 50px 20px 0;
 }
 
 .full-view h2 {
@@ -232,6 +233,17 @@ header {
     height: 69px;
 }
 
+/* section image */
+
+.full-view:not(.fourth-section) img {
+    padding: 100px 50px 0;
+}
+
+.fourth-section img {
+    width: 100%;
+}
+
+/*  */
 /* FOOTER */
 
 footer {
