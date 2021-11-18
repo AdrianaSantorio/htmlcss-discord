@@ -73,8 +73,9 @@ section {
 
 /* buttons */
 
-.btn {
+a {
     text-decoration: none;
+    cursor: pointer;
 }
 
 .btn-small {
@@ -104,10 +105,18 @@ section {
     color: white;
 }
 
+.btn:hover {
+    color: blue;
+}
+
 /* text */
 
 .text-white {
     color: white;
+}
+
+.text-blue {
+    color: #7289DA
 }
 
 /* HEADER */
@@ -123,7 +132,7 @@ header {
     line-height: 80px;
 }
 
-#logo {
+.logo {
     text-align: left;
     vertical-align: middle;
 }
@@ -140,7 +149,6 @@ header {
 }
 
 .main-menu li a {
-    text-decoration: none;
     color: white;
     font-size: 16px;
 }
@@ -212,3 +220,57 @@ header {
     font-size: 20px;
 }
 
+.sign-in {
+    margin-bottom: 150px;
+}
+
+.sign-in h3 {
+    font-size: 28px;
+    margin: 30px auto;
+    background-image: url(..//img/stars.svg);
+    width: 600px;
+    height: 69px;
+}
+
+/* FOOTER */
+
+footer {
+    background-color: #23272A;
+}
+
+.contacts {
+    padding:50px 0 30px;
+}
+
+footer ul {
+    padding-left: 25px;
+}
+
+ul:first-child {
+    font-weight: bold;
+}
+/* ? */
+
+
+footer li {
+    list-style-type: none;
+    text-align: left;
+    line-height: 25px;
+}
+
+footer li a {
+    color: white;
+}
+
+
+/* bottom-bar */
+
+.bottom-bar {
+    height: 150px;
+    line-height: 100px;
+}
+
+.bottom-bar .btn {
+    vertical-align: middle;
+    text-align: right;
+}
