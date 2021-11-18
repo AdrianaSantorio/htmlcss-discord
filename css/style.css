@@ -246,7 +246,7 @@ footer ul {
     padding-left: 25px;
 }
 
-ul:first-child {
+footer li:first-child {
     font-weight: bold;
 }
 /* ? */
