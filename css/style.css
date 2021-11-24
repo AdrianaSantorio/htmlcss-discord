@@ -15,16 +15,19 @@ body {
     font-family: Whitney, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
-section {
-    text-align: center;
-}
-
 .container {
     width: 1100px;
     margin: auto;
 }
 
+nav li {
+    display: inline-block;   
+}
+
 /* UTILITIES */
+
+/* C:background bg-gray*/
+/* classe padding? da tutti i lati per tutti i testi */
 
 .clearfix::after {
     display: table;
@@ -67,9 +70,14 @@ section {
 }
 
 /* classe col */
-.col {
+.col,.float-left {
     float: left;
 }
+
+.float-right {
+    float: right;
+}
+
 
 /* buttons */
 
@@ -119,6 +127,13 @@ a {
     color: #7289DA
 }
 
+.text-align-center {
+    text-align: center;
+}
+
+
+
+
 /* HEADER */
 
 header {
@@ -133,7 +148,6 @@ header {
 }
 
 .logo {
-    text-align: left;
     vertical-align: middle;
 }
 
@@ -142,37 +156,22 @@ header {
 }
 
 /* main menu */
-
-.main-menu li {
-    display: inline-block;
-    margin: 0 15px;
-}
+/* margine automatico fra sezioni */
 
 .main-menu li a {
     color: white;
     font-size: 16px;
+    margin: 0 15px;
 }
 
 /* spotlight */
 
 .spotlight {
+    /* C:sistemare con background size, repeat, etc */
     background-image: url(../img/jumbo.png);
     background-size: cover;
     height:500px;
 }
-
-/* .spotlight::after {
-    content: '';
-    width: 100%;
-    height: 100%;
-    background-color: rgba (255, 255, 255, 0);
-    display: inline-block;
-    position: absolute;
-    top:0;
-    left:0;
-    z-index:1;
-} 
-??????????*/
 
 .spotlight .container {
     height:500px;
@@ -207,13 +206,13 @@ header {
 
 /* MAIN */
 
-/* section text */
+/* sections text */
 .section-text {
-    padding: 50px 20px 0;
+    padding-top:150px;
 }
 
 .full-view h2 {
-    font-size: 50px;
+    font-size: 45px;
     margin-bottom: 20px;
 }
 
@@ -221,23 +220,44 @@ header {
     font-size: 20px;
 }
 
+
+/* sign-in */
+
 .sign-in {
     margin-bottom: 150px;
 }
 
-.sign-in h3 {
-    font-size: 28px;
-    margin: 30px auto;
+.star-background {
+    margin: 40px auto;  
     background-image: url(..//img/stars.svg);
-    width: 600px;
-    height: 69px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 560px;
+    height:100px
 }
+
+.star-background h3 {
+    font-size: 28px;
+    line-height: 100px;
+    vertical-align: bottom;
+    position: relative;
+    top: 30px;
+}
+/* sistemare altezza background */
+
 
 /* section image */
 
 .full-view:not(.fourth-section) img {
-    padding: 100px 50px 0;
+    padding-top: 120px;
 }
+
+
+.section-image:nth-child(2) {
+    text-align: right;
+}
+
 
 .fourth-section img {
     width: 100%;
@@ -250,28 +270,55 @@ footer {
     background-color: #23272A;
 }
 
+footer h2 {
+    font-size: 2em;
+}
+
+footer .language {
+    padding: 15px 0;
+    color:white;
+    vertical-align: middle;
+}
+
+.language img {
+    width: 7%;
+    vertical-align: middle;
+}
+
+.nav-social .fab {
+    font-size: 20px;
+    padding-right: 10px;
+}
+
+
 .contacts {
-    padding:50px 0 30px;
+    padding:60px 0 30px;
 }
 
-footer ul {
-    padding-left: 25px;
+
+.nav-social {
+    font-size: 22px;
+    padding-right: 15px;
 }
 
-footer li:first-child {
-    font-weight: bold;
+footer .col-25 {
+    padding-left: 30px;
 }
-/* ? */
-
 
 footer li {
     list-style-type: none;
-    text-align: left;
     line-height: 25px;
+    font-size: 14px;
 }
 
-footer li a {
+footer a {
     color: white;
+}
+
+hr {
+    height: 1px;
+    background-color: gray;
+    border: none;
 }
 
 
@@ -285,4 +332,11 @@ footer li a {
 .bottom-bar .btn {
     vertical-align: middle;
     text-align: right;
+    display: inline;
+    line-height: 1;
+}
+
+
+.bottom-bar .clearfix {
+    padding-top: 30px;
 }
